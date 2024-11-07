@@ -22,6 +22,17 @@ type Length<T extends any[]> = T["length"];
  
  * extends any[] で配列のみを受け付けるようにしている
  * extends any[] がないと、Length<number> などが通ってしまうが、受け付けてるのは配列のみなのでコンパイルエラーしてくれる
+ 
+ もし配列にしたいなら
+
+  type Person = {
+    name: string;
+    age: number;
+  }[]
+
+  とすると、Person[]が受け付けられる
+
+  * この場合のLengthはPerson[]の長さは1になる
  */
 
 type teslaLength = Length<tesla>; // expected 4

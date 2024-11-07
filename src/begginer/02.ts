@@ -20,7 +20,6 @@ type MyReadonly<T> = {
   * readonly "description": string; 
   
   * となる
-
 */
 
 const todo: MyReadonly<Todo> = {

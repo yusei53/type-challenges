@@ -12,14 +12,14 @@ type MyReadonly<T> = {
 };
 
 /*  
-  * TにTodoが入ってきた場合、[K in keyof T]には"title"と"description"が入る
-  * T[K] = Todo["title"] = stringになり、結果的に
+ * TにTodoが入ってきた場合、[K in keyof T]には"title"と"description"が入る
+ * T[K] = Todo["title"] = stringになり、結果的に
   
-  * readonly [K in keyof T]: T[K] = 
-  * readonly "title": string; 
-  * readonly "description": string; 
-  
-  * となる
+ * readonly [K in keyof T]: T[K] = 
+ * readonly "title": string; 
+ * readonly "description": string; 
+ 
+ * となる
 */
 
 const todo: MyReadonly<Todo> = {

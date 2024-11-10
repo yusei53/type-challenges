@@ -7,4 +7,4 @@ type Push<T extends any[], U> = [...T, U];
  * スプレッド演算子を使って、配列TとUを結合して新しい配列を作成できる
  */
 
-type Result = Push<[1, 2], "3">; // [1, 2, '3']
+type Result05 = Push<[1, 2], "3">; // [1, 2, '3']
